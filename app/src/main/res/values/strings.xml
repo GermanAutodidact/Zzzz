@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">VoiceLoop</string>
+    <string name="app_description">Automatisierter Sprachdialog für ChatGPT</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_label">VoiceLoop ChatGPT-Automatisierung</string>
+    <string name="accessibility_service_description">Ermöglicht das automatische Einfügen von erkannten Sprachnachrichten in ChatGPT, das Erkennen von Antworten und das Starten des Vorlesens für einen unterbrechungsfreien Sprachdialog.</string>
+
+    <!-- Permissions and Setup -->
+    <string name="perm_audio_title">Mikrofon-Berechtigung</string>
+    <string name="perm_audio_desc">Wird für die präzise Spracherkennung Ihrer Eingaben benötigt.</string>
+    <string name="perm_overlay_title">Über anderen Apps anzeigen</string>
+    <string name="perm_overlay_desc">Zeigt ein dezentes schwebendes Steuerungs-HUD über der ChatGPT-App an.</string>
+    <string name="perm_accessibility_title">Bedienungshilfe-Dienst</string>
+    <string name="perm_accessibility_desc">Erlaubt das automatische Übertragen an ChatGPT und Erkennen der Antworten.</string>
+    <string name="perm_battery_title">Samsung Akku-Optimierung</string>
+    <string name="perm_battery_desc">Verhindert, dass One UI 2.5 den Dienst im Hintergrund beendet.</string>
+    <string name="btn_grant">Aktivieren</string>
+    <string name="btn_granted">Aktiviert</string>
+    <string name="btn_open_settings">Einstellungen öffnen</string>
+
+    <!-- Dashboard & Status -->
+    <string name="status_idle">Bereit zum Starten</string>
+    <string name="status_listening">Ich höre zu… Sprechen Sie</string>
+    <string name="status_processing">Sprache wird verarbeitet…</string>
+    <string name="status_sending">Übertrage an ChatGPT…</string>
+    <string name="status_waiting_response">ChatGPT generiert Antwort…</string>
+    <string name="status_reading_aloud">Lese Antwort vor…</string>
+    <string name="status_loop_delay">Nächste Eingabe startet gleich…</string>
+    <string name="status_paused">Pausiert</string>
+    <string name="status_error">Fehler aufgetreten</string>
+
+    <!-- Actions -->
+    <string name="btn_start_loop">Sprach-Loop starten</string>
+    <string name="btn_stop_loop">Loop stoppen</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Fortsetzen</string>
+    <string name="btn_test_speech">Spracherkennung testen</string>
+    <string name="btn_launch_chatgpt">ChatGPT öffnen</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_name">VoiceLoop Sprachsteuerung</string>
+    <string name="notification_channel_desc">Zeigt den aktuellen Status des ChatGPT-Sprachdialogs an.</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_resume">Weiter</string>
+    <string name="notification_action_stop">Beenden</string>
+</resources>

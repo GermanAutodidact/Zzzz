@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hud_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hud_background"
+    android:elevation="12dp"
+    android:minWidth="200dp"
+    android:maxWidth="340dp"
+    android:orientation="vertical">
+
+    <!-- Header & Drag handle bar -->
+    <LinearLayout
+        android:id="@+id/hud_drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="4dp">
+
+        <View
+            android:id="@+id/hud_status_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/hud_dot_circle" />
+
+        <TextView
+            android:id="@+id/tv_hud_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VoiceLoop"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_hud_toggle_expand"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Minimieren"
+            android:src="@android:drawable/arrow_up_float"
+            android:tint="#CBD5E1" />
+    </LinearLayout>
+
+    <!-- Volume bar when listening -->
+    <ProgressBar
+        android:id="@+id/hud_volume_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginVertical="2dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#10B981"
+        android:visibility="gone" />
+
+    <!-- Expandable Content container -->
+    <LinearLayout
+        android:id="@+id/hud_expanded_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_hud_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Bereit für Sprachdialog"
+            android:textColor="#94A3B8"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_hud_transcription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#26334155"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:padding="4dp"
+            android:textColor="#38BDF8"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Control Action Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_hud_pause_resume"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Pause oder Fortsetzen"
+                android:src="@android:drawable/ic_media_pause"
+                android:tint="#F8FAFC" />
+
+            <ImageButton
+                android:id="@+id/btn_hud_restart"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Neu sprechen"
+                android:src="@android:drawable/ic_menu_rotate"
+                android:tint="#38BDF8" />
+
+            <ImageButton
+                android:id="@+id/btn_hud_stop"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Beenden"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="#EF4444" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

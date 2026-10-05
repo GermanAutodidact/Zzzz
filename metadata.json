@@ -1,0 +1,6 @@
+{
+  "name": "VoiceLoop for ChatGPT",
+  "description": "Automatisierter Sprachdialog-Loop mit der ChatGPT Android-App via Spracherkennung und Barrierefreiheitsdienst.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
